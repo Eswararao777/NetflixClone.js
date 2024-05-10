@@ -1,0 +1,363 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background: black;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+h1,h2,h3,h4{
+    color: white;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+p{
+    margin: 10px 0px;
+}
+
+image{
+    width: 100%;
+}
+
+.showcase{
+    width: 100%;
+    height: 93vh;
+    position: relative;
+    background: url('../Netflix_clone_project/img/netflix_BGI.webp') no-repeat center/cover;
+}
+
+.showcase-top{
+    position: relative;
+    height: 90px;
+    z-index: 2;
+}
+
+.showcase-top img{
+    position: absolute;
+    width: 170px;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50% , -50% );
+}
+
+.showcase-top a{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate( -50% , -50% );
+}
+
+.btn{
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 7px 10px;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 1px 0  rgba(0,0,0,.45);
+    border-radius: 3px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn-rounded{
+    border-radius: 5px;
+}
+
+.btn-xl{
+    font-size: 30px;
+    padding:  10px 30px;
+    text-transform: uppercase;
+}
+
+.showcase-content{
+   position: relative;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items:center;
+   text-align: center;
+   margin-top: 16px;
+   z-index: 2;
+}
+
+.showcase-content h1{
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 1.1;
+    margin: 0 0 32px;
+}
+
+.showcase-content p{
+    text-transform: uppercase;
+    color: white;
+    font-size: 300;
+    font-size: 30px;
+    line-height: 1.25;
+    margin: 0 0 30px;
+}
+
+.showcase::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0,0,0,0.5);
+    box-shadow: inset 120px 100px 250px black,inset -120px -100px 250px black;
+}
+
+/*Tabs*/
+.tabs{
+    background: #3d3d3d;
+    padding-top: 16px;
+    border-bottom:3px solid #3d3d3d; 
+}
+
+.tabs .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container{
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 16px;
+}
+
+.tabs p{
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.tabs .container> div{
+    padding: 7px 0;
+}
+
+.tabs .container> div:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.tab-border{
+    border-bottom: red 4px solid;
+}
+
+#tab-1-content .tab-1-content-inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px; 
+    align-items: center;
+    justify-content: center;
+}
+
+#tab-1-content img{
+    width:300px;
+    height: 250px;
+    position: relative;
+    margin-left: 150px;
+}
+
+.text-xl{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.text-lg{
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-dark{
+    color: #999;
+}
+
+.tab-content{
+    padding: 30px 0;
+    background: black;
+    color: white;
+}
+
+#tab-2-content .tab-2-content-top{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+#tab-2-content .tab-2-content-bottom{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tab-2-content-bottom img{
+    width: 300px;
+    height: 250px;
+}
+
+.text-md{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.table{
+    width: 100%;
+    margin-top: 16px;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+.table thead th{
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.table tbody tr td{
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.table tbody tr td:first-child{
+    text-align: left;
+}
+
+.table tbody tr:nth-child(odd){
+    background: #222;
+}
+
+/*Footer */
+.footer{
+    max-width: 75%;
+    margin: 10px auto;
+    overflow: auto;
+}
+
+.footer, .footer a{
+   color: white;
+   font-size: 12px;
+}
+
+.footer p{
+    margin-bottom: 10px;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+}
+
+.footer li{
+    line-height: 25px;
+}
+
+@media(max-width:960px){
+    .showcase{
+        height: 70vh;
+    }
+
+    .hide-sm{
+        display: none;
+    }
+
+    .showcase-top img{
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
+    }
+
+    .showcase-content h1{
+       font-size: 25px;
+       line-height: 1;
+    }
+
+    .showcase-content p{
+        font-size: 10px;
+    }
+
+    .btn-xl{
+        font-size: 10px;
+        padding: 5px 7px;
+    }
+
+    .text-xl{
+        font-size: 11px;
+    }
+     
+    .text-lg{
+        font-size: 9px;
+    }
+
+    .text-md{
+        font-size: 5px;
+    }
+    
+    .footer .footer-cols{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 700px){
+    .showcase::after{
+        box-shadow: inset 80px 80px 250px black,inset -80px -80px 250px black;
+
+    }
+
+    #tab-1-content .tab-1-content-inner{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    #tab-2-content .tab-2-content-top{
+        display: block;
+        text-align: center;
+    }
+
+    #tab-2-content .tab-2-content-bottom{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Hide content initially*/
+#tab-1-content, #tab-2-content, #tab-3-content{
+    display: none;
+}
+
+.show{
+    display: block !important;
+}
